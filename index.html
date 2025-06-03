@@ -8,7 +8,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
+  
+<style>
+@keyframes fadein {
+  from { opacity: 0; transform: scale(1.02); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-fadein {
+  animation: fadein 3s ease-out forwards;
+}
+</style>
+
+</head>
   <body class="bg-white text-gray-800 font-sans">
     <script>AOS.init();</script>
 
@@ -38,7 +49,13 @@
     </section>
 
     <!-- FORMULAR -->
-    <section class="py-16 px-6 bg-gray-50">
+    
+    <section class="relative py-16 px-6 bg-gray-900 text-white overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="form-background.jpg" alt="Hintergrund" class="w-full h-full object-cover opacity-30 animate-fadein">
+      </div>
+      <div class="relative z-10 bg-white bg-opacity-90 text-gray-900 max-w-xl mx-auto p-8 rounded shadow-lg" data-aos="fade-up">
+
       <div class="max-w-xl mx-auto" data-aos="fade-up">
         <h2 class="text-2xl font-semibold mb-4 text-center">Was möchten Sie automatisieren?</h2>
         <form action="https://formspree.io/f/xkgbnlnk" method="POST" class="space-y-6">
@@ -81,7 +98,8 @@
           </button>
         </form>
       </div>
-    </section>
+    </div>
+</section>
 
     <!-- FOOTER -->
     <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
