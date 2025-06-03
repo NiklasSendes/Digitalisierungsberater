@@ -1,117 +1,87 @@
 
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Niklas Sendes – Digitalisierungsberater</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #f7f7f7;
-      color: #333;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Niklas Sendes – Digitalisierungsberater</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
 
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 4rem 1rem;
-      background: white;
-    }
-
-    .hero img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    .hero h2 {
-      margin-top: 0.5rem;
-      font-weight: normal;
-      color: #666;
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin-top: 1.5rem;
-      line-height: 1.6;
-    }
-
-    @media(min-width: 768px) {
-      .hero {
-        padding: 6rem 2rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <section class="hero">
-    <img src="profilbild.png" alt="Foto von Niklas Sendes" />
-    <h1>Niklas Sendes</h1>
-    <h2>Ihr Partner für Digitalisierung im Mittelstand</h2>
-    <p>
-      Ich helfe kleinen und mittelständischen Unternehmen dabei, ihre Prozesse einfacher, schneller und digitaler zu machen – ganz ohne Technik-Kauderwelsch.
-      Ob papierloses Büro, automatisierte Abläufe durch clever verknüpfte Daten:
-      Gemeinsam finden wir praxisnahe Lösungen, die wirklich zu Ihrem Alltag passen.
-      Mein Ziel ist es, dass Sie Zeit sparen, Kosten senken – und den Kopf frei haben fürs Wesentliche.
-    </p>
-  </section>
-
-  <section style="background-color: #ffffff; padding: 3rem 1rem; text-align: center;">
-    <h2 style="margin-bottom: 1rem;">E-Book anfordern</h2>
-    <p style="max-width: 500px; margin: 0 auto 2rem;">
-      Wählen Sie ein Thema und erhalten Sie ein kostenloses E-Book mit praktischen Tipps rund um Digitalisierung, Prozessoptimierung und Automatisierung.
-    </p>
-
-    <form action="https://formspree.io/f/xkgbnlnk" method="POST" style="max-width: 400px; margin: 0 auto;">
-      <label for="thema" style="display:block; margin-bottom:0.5rem;">Thema auswählen:</label>
-      <select name="Thema" id="thema" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;">
-        <option value="">Bitte wählen</option>
-        <option value="Papierloses Büro">Papierloses Büro</option>
-        <option value="Prozessautomatisierung">Prozessautomatisierung</option>
-        <option value="Datenverknüpfung & Analyse">Datenverknüpfung & Analyse</option>
-      </select>
-
-      <label for="email" style="display:block; margin-bottom:0.5rem;">Ihre E-Mail-Adresse:</label>
-      <input type="email" name="Email" id="email" required placeholder="z. B. max@firma.de"
-        style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"/>
-
-      <button type="submit"
-        style="background-color: #007acc; color: white; padding: 0.7rem 1.5rem; border: none; cursor: pointer;">
-        E-Book anfordern
-      </button>
-
-      <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">
-        Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäß unserer <a href="#">Datenschutzerklärung</a> zu.
+    <!-- HERO -->
+    <section class="text-center py-16 px-4 bg-white">
+      <img src="profilbild.png" alt="Niklas Sendes" class="w-40 h-40 rounded-full mx-auto shadow-md mb-6"/>
+      <h1 class="text-3xl font-bold">Niklas Sendes</h1>
+      <h2 class="text-lg text-gray-600 mt-2">Ihr Partner für Digitalisierung im Mittelstand</h2>
+      <p class="mt-6 max-w-xl mx-auto text-lg">
+        Ich helfe kleinen und mittelständischen Unternehmen dabei, ihre Prozesse einfacher, schneller und digitaler zu machen – ganz ohne Technik-Kauderwelsch.
+        Ob papierloses Büro oder automatisierte Abläufe durch clever verknüpfte Daten – wir finden praxisnahe Lösungen, die wirklich zu Ihrem Alltag passen.
       </p>
-    </form>
-  </section>
+    </section>
 
-  <section style="background-color: #f7f7f7; padding: 3rem 1rem; text-align: center;">
-    <h2 style="margin-bottom: 1rem;">Online-Termin vereinbaren</h2>
-    <p style="max-width: 500px; margin: 0 auto 2rem;">
-      Möchten Sie direkt über Ihre Digitalisierungsziele sprechen? Vereinbaren Sie jetzt ganz unkompliziert einen kostenlosen Beratungstermin.
-    </p>
+    <!-- UMFRAGE / E-BOOK -->
+    <section class="bg-white py-16 px-4 text-center">
+      <h2 class="text-2xl font-semibold mb-4">E-Book & Impulse anfordern</h2>
+      <p class="max-w-xl mx-auto mb-8">
+        Beantworten Sie zwei kurze Fragen und erhalten Sie ein passendes E-Book mit konkreten Ideen für Ihre Digitalisierung.
+      </p>
 
-    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/niklas-sendes-toshibatec-tgis'});return false;"
-      style="background-color: #00a2ff; color: white; padding: 0.8rem 1.5rem; font-size: 1rem; border: none; cursor: pointer;">
-      Termin buchen
-    </button>
-  </section>
+      <form action="https://formspree.io/f/xkgbnlnk" method="POST" class="max-w-xl mx-auto text-left space-y-6">
+        <div>
+          <label for="prozess" class="block font-medium mb-1">Welchen Prozess würden Sie am liebsten automatisieren?</label>
+          <textarea name="Prozess" id="prozess" rows="3" required class="w-full border border-gray-300 rounded-md p-2"></textarea>
+        </div>
 
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <div>
+          <label for="bereich" class="block font-medium mb-1">In welchem Unternehmensbereich sehen Sie das größte Potenzial zur Zeitersparnis durch Digitalisierung?</label>
+          <select name="Bereich" id="bereich" required class="w-full border border-gray-300 rounded-md p-2">
+            <option value="">Bitte wählen</option>
+            <option>Buchhaltung</option>
+            <option>Vertrieb</option>
+            <option>Einkauf</option>
+            <option>Lager / Logistik</option>
+            <option>Kundenservice</option>
+            <option>Personalwesen</option>
+            <option>Andere</option>
+          </select>
+        </div>
 
-</body>
+        <div>
+          <label for="email" class="block font-medium mb-1">Ihre E-Mail-Adresse</label>
+          <input type="email" name="Email" id="email" required class="w-full border border-gray-300 rounded-md p-2"/>
+        </div>
+
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+          E-Book anfordern
+        </button>
+      </form>
+    </section>
+
+    <!-- PROJEKTE -->
+    <section class="bg-gray-100 py-16 px-4 text-center">
+      <h2 class="text-2xl font-semibold mb-10">Erfolgsgeschichten</h2>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 text-left">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Digitalisierung der Eingangsrechnungen</h3>
+          <p class="text-gray-700">Ein mittelständischer Händler konnte durch die Einführung eines digitalen Freigabe-Workflows über 80 % Zeit in der Buchhaltung sparen. Medienbrüche und Papier wurden vollständig eliminiert.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Automatisierter Kundenservice mit Datenverknüpfung</h3>
+          <p class="text-gray-700">Für ein Dienstleistungsunternehmen wurde eine einfache CRM-Automation implementiert, die Anfragen automatisch kategorisiert und zuweist. Antwortzeiten halbiert, Mitarbeiter entlastet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KALENDER -->
+    <section class="bg-white py-16 px-4 text-center">
+      <h2 class="text-2xl font-semibold mb-6">Online-Termin vereinbaren</h2>
+      <p class="max-w-xl mx-auto mb-8">
+        Buchen Sie ein kostenloses Erstgespräch – direkt online.
+      </p>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/niklas-sendes-toshibatec-tgis" style="min-width:320px;height:700px;"></div>
+    </section>
+
+  </body>
 </html>
