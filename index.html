@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -67,6 +68,50 @@
       Mein Ziel ist es, dass Sie Zeit sparen, Kosten senken – und den Kopf frei haben fürs Wesentliche.
     </p>
   </section>
+
+  <section style="background-color: #ffffff; padding: 3rem 1rem; text-align: center;">
+    <h2 style="margin-bottom: 1rem;">E-Book anfordern</h2>
+    <p style="max-width: 500px; margin: 0 auto 2rem;">
+      Wählen Sie ein Thema und erhalten Sie ein kostenloses E-Book mit praktischen Tipps rund um Digitalisierung, Prozessoptimierung und Automatisierung.
+    </p>
+
+    <form action="https://formspree.io/f/xkgbnlnk" method="POST" style="max-width: 400px; margin: 0 auto;">
+      <label for="thema" style="display:block; margin-bottom:0.5rem;">Thema auswählen:</label>
+      <select name="Thema" id="thema" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;">
+        <option value="">Bitte wählen</option>
+        <option value="Papierloses Büro">Papierloses Büro</option>
+        <option value="Prozessautomatisierung">Prozessautomatisierung</option>
+        <option value="Datenverknüpfung & Analyse">Datenverknüpfung & Analyse</option>
+      </select>
+
+      <label for="email" style="display:block; margin-bottom:0.5rem;">Ihre E-Mail-Adresse:</label>
+      <input type="email" name="Email" id="email" required placeholder="z. B. max@firma.de"
+        style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"/>
+
+      <button type="submit"
+        style="background-color: #007acc; color: white; padding: 0.7rem 1.5rem; border: none; cursor: pointer;">
+        E-Book anfordern
+      </button>
+
+      <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">
+        Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäß unserer <a href="#">Datenschutzerklärung</a> zu.
+      </p>
+    </form>
+  </section>
+
+  <section style="background-color: #f7f7f7; padding: 3rem 1rem; text-align: center;">
+    <h2 style="margin-bottom: 1rem;">Online-Termin vereinbaren</h2>
+    <p style="max-width: 500px; margin: 0 auto 2rem;">
+      Möchten Sie direkt über Ihre Digitalisierungsziele sprechen? Vereinbaren Sie jetzt ganz unkompliziert einen kostenlosen Beratungstermin.
+    </p>
+
+    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/niklas-sendes-toshibatec-tgis'});return false;"
+      style="background-color: #00a2ff; color: white; padding: 0.8rem 1.5rem; font-size: 1rem; border: none; cursor: pointer;">
+      Termin buchen
+    </button>
+  </section>
+
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 </body>
 </html>
